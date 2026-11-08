@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profil Program Studi Desain Komunikasi Visual">
+    <title>Profil Prodi</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="Logo.jpg" alt="Logo Universitas Metamedia" width="200">
+
+        <h2 style="color:orange;">
+            STUDI DESAIN KOMUNIKASI VISUAL
+        </h2>
+
+        <h3 style="color:cyan;">
+            Universitas Metamedia
+        </h3>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#profil">Profil</a> |
+        <a href="#matakuliah">Mata Kuliah</a> |
+        <a href="#pendaftaran">Pendaftaran</a> |
+        <a href="#media">Media</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- SECTION PROFIL -->
+        <section id="profil">
+            <article style="background-color:rgb(220,245,246); padding:20px;">
+
+                <h2>Profil Program Studi</h2>
+
+                <p>
+                    Desain Komunikasi Visual adalah bidang seni dan desain
+                    yang mempelajari cara menyampaikan suatu pesan atau
+                    informasi melalui elemen visual.
+                </p>
+
+                <h3>Daftar Kompetensi</h3>
+
+                <ol>
+                    <li>Desain Grafis dan Branding</li>
+                    <li>Animasi</li>
+                    <li>Fotografi dan Videografi</li>
+                    <li><em>UX/UI</em> Design</li>
+                    <li>Penguasaan Perangkat Lunak</li>
+                </ol>
+
+                <ul>
+                    <li>Adobe Photoshop</li>
+                    <li>Illustrator</li>
+                    <li>Blender</li>
+                    <li>Premiere</li>
+                </ul>
+
+            </article>
+        </section>
+
+        <!-- SECTION MATA KULIAH -->
+        <section id="matakuliah">
+            <h2>Daftar Mata Kuliah</h2>
+
+            <table border="2" cellpadding="8">
+                <tr>
+                    <th>No</th>
+                    <th>Kode</th>
+                    <th>Mata Kuliah</th>
+                    <th>SKS</th>
+                    <th>Semester</th>
+                </tr>
+
+                <tr><td>1</td><td>3DKVA</td><td>Pemrogram Dasar</td><td>3</td><td>3</td></tr>
+                <tr><td>2</td><td>3DKVA</td><td>Storyboard</td><td>3</td><td>3</td></tr>
+                <tr><td>3</td><td>3DKVA</td><td>Ilustrasi Desain</td><td>3</td><td>3</td></tr>
+                <tr><td>4</td><td>3DKVA</td><td>Komunikasi Pemasaran</td><td>2</td><td>3</td></tr>
+                <tr><td>5</td><td>3DKVA</td><td>Fotografi Design</td><td>3</td><td>3</td></tr>
+                <tr><td>6</td><td>3DKVA</td><td>Komputer Grafis</td><td>3</td><td>3</td></tr>
+                <tr><td>7</td><td>3DKVA</td><td>DKV II</td><td>3</td><td>3</td></tr>
+                <tr><td>8</td><td>3DKVA</td><td>Bahasa Inggris</td><td>2</td><td>3</td></tr>
+            </table>
+        </section>
+
+        <!-- SECTION PENDAFTARAN -->
+        <section id="pendaftaran">
+            <h2>FORMULIR PENDAFTARAN</h2>
+
+            <form action="submit.php" method="post">
+
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <br><br>
+
+                <label for="NIM">NIM:</label>
+                <input type="text" id="NIM" name="NIM" required>
+                <br><br>
+
+                <label for="phone">No HP:</label>
+                <input type="tel" id="phone" name="phone"
+                placeholder="0895-7654-8888">
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+
+                <p>Jenis Kelamin:</p>
+
+                <input type="radio" id="Laki-laki"
+                name="Jenis Kelamin" value="Laki-laki">
+                <label for="Laki-laki">Laki-laki</label>
+                <br>
+
+                <input type="radio" id="Perempuan"
+                name="Jenis Kelamin" value="Perempuan">
+                <label for="Perempuan">Perempuan</label>
+                <br><br>
+
+                <label for="Semester">Semester:</label>
+
+                <select name="Semester" id="Semester">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+
+                <h3>Minat Bidang DKV</h3>
+
+                <input type="checkbox" id="animasi" name="minat[]" value="Animasi">
+                <label for="animasi">Animasi</label>
+                <br>
+
+                <input type="checkbox" id="fotografi" name="minat[]" value="Fotografi">
+                <label for="fotografi">Fotografi</label>
+                <br>
+
+                <input type="checkbox" id="videografi" name="minat[]" value="Videografi">
+                <label for="videografi">Videografi</label>
+                <br>
+
+                <input type="checkbox" id="branding" name="minat[]" value="Branding">
+                <label for="branding">Branding</label>
+                <br><br>
+
+                <label for="pesan">Pesan:</label>
+                <textarea name="pesan" id="pesan"></textarea>
+                <br><br>
+
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+
+            </form>
+        </section>
+
+        <!-- SECTION MEDIA DAN LINK -->
+        <section id="media">
+
+            <article>
+                <h2>Link</h2>
+
+                <p>
+                    <a href="https://metamedia.ac.id/">
+                        Website Metamedia
+                    </a>
+                </p>
+
+                <p>
+                    <a href="https://spmb.metamedia.ac.id/program-studi-detail/detail/90241">
+                        Halaman Program Studi
+                    </a>
+                </p>
+
+                <p>
+                    <a href="mailto:rektorat@metamedia.ac.id">
+                        Hubungi Kami
+                    </a>
+                </p>
+            </article>
+
+            <article>
+                <h2>Audio</h2>
+
+                <audio controls>
+                    <source src="MBB.mp3" type="audio/mpeg">
+                    Browser Anda tidak mendukung audio.
+                </audio>
+            </article>
+
+            <article>
+                <h2>Video Promosi</h2>
+
+                <video width="400" controls>
+                    <source src="Promosi.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
+                </video>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            &copy; 2026 Universitas Metamedia.
+            Program Studi Desain Komunikasi Visual.
+        </p>
+    </footer>
+
+</body>
+</html>
+
